@@ -7,17 +7,17 @@
   
   <title>js中几种for循环的对比 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基本for循环基本for循环在使用上没有其他限制，但是代码上写起来复杂一点儿 var array = [1,2,3]; for(var i = 0,len=array.length; i &amp;lt; len; i++) {     console.log(array[i]);//元素值     console.log(i);//元素对应的索引(下标) } for infor in 一般会用于遍历对象">
+  <meta name="description" content="1、基本for循环基本for循环在使用上没有其他限制，但是代码上写起来复杂一点儿 var array = [1,2,3]; for(var i = 0,len=array.length; i &amp;lt; len; i++) {     console.log(array[i]);//元素值     console.log(i);//元素对应的索引(下标) } 2、for infor in 一般会用于">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js中几种for循环的对比">
 <meta property="og:url" content="http://yoursite.com/2018/07/01/for-循环的对比/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="基本for循环基本for循环在使用上没有其他限制，但是代码上写起来复杂一点儿 var array = [1,2,3]; for(var i = 0,len=array.length; i &amp;lt; len; i++) {     console.log(array[i]);//元素值     console.log(i);//元素对应的索引(下标) } for infor in 一般会用于遍历对象">
+<meta property="og:description" content="1、基本for循环基本for循环在使用上没有其他限制，但是代码上写起来复杂一点儿 var array = [1,2,3]; for(var i = 0,len=array.length; i &amp;lt; len; i++) {     console.log(array[i]);//元素值     console.log(i);//元素对应的索引(下标) } 2、for infor in 一般会用于">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-01T10:40:18.412Z">
+<meta property="og:updated_time" content="2018-07-01T10:47:33.717Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js中几种for循环的对比">
-<meta name="twitter:description" content="基本for循环基本for循环在使用上没有其他限制，但是代码上写起来复杂一点儿 var array = [1,2,3]; for(var i = 0,len=array.length; i &amp;lt; len; i++) {     console.log(array[i]);//元素值     console.log(i);//元素对应的索引(下标) } for infor in 一般会用于遍历对象">
+<meta name="twitter:description" content="1、基本for循环基本for循环在使用上没有其他限制，但是代码上写起来复杂一点儿 var array = [1,2,3]; for(var i = 0,len=array.length; i &amp;lt; len; i++) {     console.log(array[i]);//元素值     console.log(i);//元素对应的索引(下标) } 2、for infor in 一般会用于">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -86,13 +86,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="基本for循环"><a href="#基本for循环" class="headerlink" title="基本for循环"></a>基本for循环</h2><p>基本for循环在使用上没有其他限制，但是代码上写起来复杂一点儿</p>
+        <h2 id="1、基本for循环"><a href="#1、基本for循环" class="headerlink" title="1、基本for循环"></a>1、基本for循环</h2><p>基本for循环在使用上没有其他限制，但是代码上写起来复杂一点儿</p>
 <pre><code>var array = [1,2,3];
 for(var i = 0,len=array.length; i &lt; len; i++) {
     console.log(array[i]);//元素值
     console.log(i);//元素对应的索引(下标)
 }
-</code></pre><h2 id="for-in"><a href="#for-in" class="headerlink" title="for in"></a>for in</h2><p>for in 一般会用于遍历对象，会深度遍历对象的每个键，即如果一个键对应的键值是对象obj的话，for in还会去遍历一遍这个对象obj。不建议遍历数组</p>
+</code></pre><h2 id="2、for-in"><a href="#2、for-in" class="headerlink" title="2、for in"></a>2、for in</h2><p>for in 一般会用于遍历对象，会深度遍历对象的每个键，即如果一个键对应的键值是对象obj的话，for in还会去遍历一遍这个对象obj。不建议遍历数组</p>
 <pre><code>var obj ={
     a:1,
     b:2,
@@ -105,13 +105,13 @@ for (var i in obj) {
     console.log(i);//key值
     console.log(obj[i]);//key对应的value
 }
-</code></pre><h2 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h2><p>forEach遍历数组很方便，但是缺点是不能执行break</p>
+</code></pre><h2 id="3、forEach"><a href="#3、forEach" class="headerlink" title="3、forEach"></a>3、forEach</h2><p>forEach遍历数组很方便，但是缺点是不能执行break</p>
 <pre><code>var array = [1,2,3];
 array.forEach(function(value,index){
     console.log(value);//元素值
     console.log(index);//元素对应的索引(下标)
 });
-</code></pre><h2 id="for-of"><a href="#for-of" class="headerlink" title="for of"></a>for of</h2><p>for of 是es6中新加的api，既具备了for in 和forEach在语法上的简练，又避免的深度遍历和不能break的缺点，遍历数组是很好的选择</p>
+</code></pre><h2 id="4、for-of"><a href="#4、for-of" class="headerlink" title="4、for of"></a>4、for of</h2><p>for of 是es6中新加的api，既具备了for in 和forEach在语法上的简练，又避免的深度遍历和不能break的缺点，遍历数组是很好的选择</p>
 <pre><code>let array = [1,2,3];
 for (const i of array) {
     console.log(i);//元素值
@@ -121,7 +121,7 @@ for (const i of array) {
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/01/for-循环的对比/" data-id="cjj2pi2s50000v4tyo8badhxs" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/01/for-循环的对比/" data-id="cjj2pougu00005wtyor7b0109" class="article-share-link">Share</a>
       
       
     </footer>
