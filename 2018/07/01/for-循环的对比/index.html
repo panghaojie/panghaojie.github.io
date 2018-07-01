@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>js中的几种for循环的对比 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="基本for循环基本for循环在使用上没有其他限制，但是代码上写起来比较复杂 12345var array = [1,2,3];for(var i = 0,len=array.length; i &amp;lt; len; i++) &amp;#123;	console.log(array[i]);//元素值	console.log(i);//元素对应的索引(下标)&amp;#125; for infor in 一般会用于">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js中的几种for循环的对比">
+<meta property="og:url" content="http://yoursite.com/2018/07/01/for-循环的对比/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="基本for循环基本for循环在使用上没有其他限制，但是代码上写起来比较复杂 12345var array = [1,2,3];for(var i = 0,len=array.length; i &amp;lt; len; i++) &amp;#123;	console.log(array[i]);//元素值	console.log(i);//元素对应的索引(下标)&amp;#125; for infor in 一般会用于">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-01T10:24:05.530Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="js中的几种for循环的对比">
+<meta name="twitter:description" content="基本for循环基本for循环在使用上没有其他限制，但是代码上写起来比较复杂 12345var array = [1,2,3];for(var i = 0,len=array.length; i &amp;lt; len; i++) &amp;#123;	console.log(array[i]);//元素值	console.log(i);//元素对应的索引(下标)&amp;#125; for infor in 一般会用于">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-for-循环的对比" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-for-循环的对比" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/07/01/for-循环的对比/" class="article-date">
   <time datetime="2018-07-01T09:54:11.831Z" itemprop="datePublished">2018-07-01</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/01/for-循环的对比/">js中的几种for循环的对比</a>
+    <h1 class="article-title" itemprop="name">
+      js中的几种for循环的对比
     </h1>
   
 
@@ -101,56 +103,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/01/hello-world/" class="article-date">
-  <time datetime="2018-07-01T08:55:40.224Z" itemprop="datePublished">2018-07-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/01/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2018/07/01/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/01/hello-world/" data-id="cjj2ovjx10001xgtybc0tjx81" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
