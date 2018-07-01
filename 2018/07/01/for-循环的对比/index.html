@@ -5,19 +5,19 @@
   
 
   
-  <title>js中的几种for循环的对比 | Hexo</title>
+  <title>js中几种for循环的对比 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基本for循环基本for循环在使用上没有其他限制，但是代码上写起来比较复杂 12345var array = [1,2,3];for(var i = 0,len=array.length; i &amp;lt; len; i++) &amp;#123;	console.log(array[i]);//元素值	console.log(i);//元素对应的索引(下标)&amp;#125; for infor in 一般会用于">
+  <meta name="description" content="基本for循环基本for循环在使用上没有其他限制，但是代码上写起来比较复杂 12345var array = [1,2,3];for(var i = 0,len=array.length; i &amp;lt; len; i++) &amp;#123;console.log(array[i]);//元素值console.log(i);//元素对应的索引(下标)&amp;#125; for infor in 一般会用于遍历">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js中的几种for循环的对比">
+<meta property="og:title" content="js中几种for循环的对比">
 <meta property="og:url" content="http://yoursite.com/2018/07/01/for-循环的对比/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="基本for循环基本for循环在使用上没有其他限制，但是代码上写起来比较复杂 12345var array = [1,2,3];for(var i = 0,len=array.length; i &amp;lt; len; i++) &amp;#123;	console.log(array[i]);//元素值	console.log(i);//元素对应的索引(下标)&amp;#125; for infor in 一般会用于">
+<meta property="og:description" content="基本for循环基本for循环在使用上没有其他限制，但是代码上写起来比较复杂 12345var array = [1,2,3];for(var i = 0,len=array.length; i &amp;lt; len; i++) &amp;#123;console.log(array[i]);//元素值console.log(i);//元素对应的索引(下标)&amp;#125; for infor in 一般会用于遍历">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-01T10:24:05.530Z">
+<meta property="og:updated_time" content="2018-07-01T10:26:33.261Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js中的几种for循环的对比">
-<meta name="twitter:description" content="基本for循环基本for循环在使用上没有其他限制，但是代码上写起来比较复杂 12345var array = [1,2,3];for(var i = 0,len=array.length; i &amp;lt; len; i++) &amp;#123;	console.log(array[i]);//元素值	console.log(i);//元素对应的索引(下标)&amp;#125; for infor in 一般会用于">
+<meta name="twitter:title" content="js中几种for循环的对比">
+<meta name="twitter:description" content="基本for循环基本for循环在使用上没有其他限制，但是代码上写起来比较复杂 12345var array = [1,2,3];for(var i = 0,len=array.length; i &amp;lt; len; i++) &amp;#123;console.log(array[i]);//元素值console.log(i);//元素对应的索引(下标)&amp;#125; for infor in 一般会用于遍历">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -78,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      js中的几种for循环的对比
+      js中几种for循环的对比
     </h1>
   
 
@@ -87,17 +87,17 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="基本for循环"><a href="#基本for循环" class="headerlink" title="基本for循环"></a>基本for循环</h2><p>基本for循环在使用上没有其他限制，但是代码上写起来比较复杂</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var array = [1,2,3];</span><br><span class="line"><span class="keyword">for</span>(var i = 0,len=array.length; i &lt; len; i++) &#123;</span><br><span class="line">	console.log(array[i]);//元素值</span><br><span class="line">	console.log(i);//元素对应的索引(下标)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var array = [1,2,3];</span><br><span class="line"><span class="keyword">for</span>(var i = 0,len=array.length; i &lt; len; i++) &#123;</span><br><span class="line">console.log(array[i]);//元素值</span><br><span class="line">console.log(i);//元素对应的索引(下标)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="for-in"><a href="#for-in" class="headerlink" title="for in"></a>for in</h2><p>for in 一般会用于遍历对象，会深度遍历对象的每个键，即如果一个键对应的键值是对象obj的话，for in还会去遍历一遍这个对象obj。不建议遍历数组</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var obj =&#123;</span><br><span class="line">	a:1,</span><br><span class="line">	b:2,</span><br><span class="line">	c:&#123;</span><br><span class="line">		a:1,</span><br><span class="line">		b:2</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (var i <span class="keyword">in</span> obj) &#123;</span><br><span class="line">	console.log(i);//key值</span><br><span class="line">	console.log(obj[i]);//key对应的value</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var obj =&#123;</span><br><span class="line">a:1,</span><br><span class="line">b:2,</span><br><span class="line">c:&#123;</span><br><span class="line">a:1,</span><br><span class="line">b:2</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (var i <span class="keyword">in</span> obj) &#123;</span><br><span class="line">console.log(i);//key值</span><br><span class="line">console.log(obj[i]);//key对应的value</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h2><p>forEach遍历数组很方便，但是缺点是不能执行break</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var array = [1,2,3];</span><br><span class="line">array.forEach(<span class="keyword">function</span>(value,index)&#123;</span><br><span class="line">	console.log(value);//元素值</span><br><span class="line">	console.log(index);//元素对应的索引(下标)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var array = [1,2,3];</span><br><span class="line">array.forEach(<span class="keyword">function</span>(value,index)&#123;</span><br><span class="line">console.log(value);//元素值</span><br><span class="line">console.log(index);//元素对应的索引(下标)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <h2 id="for-of"><a href="#for-of" class="headerlink" title="for of"></a>for of</h2><p>for of 是es6中新加的api，既具备了for in 和forEach在语法上的简练，又避免的深度遍历和不能break的缺点，遍历数组是很好的选择</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> array = [1,2,3];</span><br><span class="line"><span class="keyword">for</span> (const i of array) &#123;</span><br><span class="line">	console.log(i);//元素值</span><br><span class="line">	console.log(array.indexOf(i));//元素对应的索引(下标)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> array = [1,2,3];</span><br><span class="line"><span class="keyword">for</span> (const i of array) &#123;</span><br><span class="line">console.log(i);//元素值</span><br><span class="line">console.log(array.indexOf(i));//元素对应的索引(下标)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/01/for-循环的对比/" data-id="cjj2ovjw30000xgtyzeaoqwxj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/01/for-循环的对比/" data-id="cjj2oxusi0000yotytu3c9hrc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -146,7 +146,7 @@
       <ul>
         
           <li>
-            <a href="/2018/07/01/for-循环的对比/">js中的几种for循环的对比</a>
+            <a href="/2018/07/01/for-循环的对比/">js中几种for循环的对比</a>
           </li>
         
           <li>
